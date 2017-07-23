@@ -109,7 +109,7 @@ public class WeeklyActivity extends AppCompatActivity {
             String currentDay = cursor.getString(dayColumnIndex);
             String currentDate = cursor.getString(dateColumnIndex);
             int currentStatus = cursor.getInt(statusColumnIndex);
-            int currentHabit = cursor.getInt(habitColumnIndex);
+            String currentHabit = cursor.getString(habitColumnIndex);
             // Display the values from each column of the current row in the cursor in the TextView
             displayView.append(("\n" + currentID + " - " +
                     currentDay + " - " +

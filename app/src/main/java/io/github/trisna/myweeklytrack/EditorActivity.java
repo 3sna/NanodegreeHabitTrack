@@ -110,7 +110,7 @@ public class EditorActivity extends AppCompatActivity{
         String dayString = mDayEditText.getText().toString().trim();
         String dateString = mDateEditText.getText().toString().trim();
         String habitString = mHabitEditText.getText().toString().trim();
-        //int weight = Integer.parseInt(weightString);
+        //int habit = Integer.parseInt(habitString);
 
         // Create database helper
         HabitDbHelper mDbHelper = new HabitDbHelper(this);
@@ -132,10 +132,10 @@ public class EditorActivity extends AppCompatActivity{
         // Show a toast message depending on whether or not the insertion was successful
         if (newRowId == -1) {
             // If the row ID is -1, then there was an error with insertion.
-            Toast.makeText(this, "Error with saving pet", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Error with saving habbit", Toast.LENGTH_SHORT).show();
         } else {
             // Otherwise, the insertion was successful and we can display a toast with the row ID.
-            Toast.makeText(this, "Pet saved with row id: " + newRowId, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Habit saved with row id: " + newRowId, Toast.LENGTH_SHORT).show();
         }
     }
 

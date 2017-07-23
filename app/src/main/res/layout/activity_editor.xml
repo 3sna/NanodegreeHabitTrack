@@ -96,7 +96,7 @@
             <EditText
                 android:id="@+id/edit_habit"
                 android:hint="@string/hint_habit"
-                android:inputType="number"
+                android:inputType="textCapWords"
                 style="@style/EditorFieldStyle" />
 
         </RelativeLayout>
